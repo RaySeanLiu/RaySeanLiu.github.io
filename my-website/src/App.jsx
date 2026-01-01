@@ -1,22 +1,42 @@
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className="App">
       <nav className="navbar">
-        <h1 className="logo">Your Name</h1>
-        <ul className="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <h1 className="logo">Ray Liu</h1>
+        <button
+          className="mobile-menu-toggle"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+          <li><a href="#home" onClick={closeMenu}>Home</a></li>
+          <li><a href="#about" onClick={closeMenu}>About</a></li>
+          <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
+          <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
         </ul>
       </nav>
 
       <section id="home" className="hero">
         <div className="hero-content">
-          <h1>Hi, I'm Your Name</h1>
-          <p>Computer Science Student. Developer. Problem Solver.</p>
+          <h1>Hi, I'm Ray.</h1>
+          <p>CS @ NC State</p>
           <button className="cta-button">View My Work</button>
         </div>
       </section>
@@ -24,14 +44,13 @@ function App() {
       <section id="about" className="about">
         <h2>About Me</h2>
         <p>
-          I'm a Computer Science student passionate about building
-          thoughtful products and learning new technologies.
+          I'm a Computer Science student interested in...
         </p>
         <div className="skills">
+          <span className="skill-tag">Python</span>
           <span className="skill-tag">JavaScript</span>
           <span className="skill-tag">React</span>
           <span className="skill-tag">HTML/CSS</span>
-          <span className="skill-tag">Python</span>
         </div>
       </section>
 
@@ -59,17 +78,17 @@ function App() {
       </section>
 
       <section id="contact" className="contact">
-        <h2>Get In Touch</h2>
-        <p>Let's connect and build something great together.</p>
+        <h2>Contact</h2>
+        <p>Message me here.</p>
         <div className="contact-links">
-          <a href="mailto:your.email@example.com">Email</a>
-          <a href="https://github.com/yourusername">GitHub</a>
+          <a href="mailto:rliu36@ncsu.edu">Email</a>
+          <a href="https://github.com/RaySeanLiu">GitHub</a>
           <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
         </div>
       </section>
 
       <footer className="footer">
-        <p>© 2026 Your Name</p>
+        <p>© 2026 Ray Liu</p>
       </footer>
     </div>
   );

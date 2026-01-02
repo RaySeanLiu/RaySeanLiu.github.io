@@ -64,9 +64,9 @@ function App() {
           </div>
 
           <div className="project-card">
-            <h3>Project Two</h3>
-            <p>An innovative solution to improve everyday workflows.</p>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="project-link">Learn more</a>
+            <h3>Photo Album</h3>
+            <p>An birthday present for my mom.</p>
+            <a href="https://github.com/RaySeanLiu/Photo-Album" target="_blank" rel="noopener noreferrer" className="project-link">Learn more</a>
           </div>
 
           <div className="project-card">

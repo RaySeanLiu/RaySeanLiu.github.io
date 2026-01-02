@@ -60,7 +60,7 @@ function App() {
           <div className="project-card">
             <h3>Game Menu</h3>
             <p>A Python tkinter video game application.</p>
-            <a href="https://github.com/RaySeanLiu/Game-Menu" className="project-link">Learn more</a>
+            <a href="https://github.com/RaySeanLiu/Game-Menu" target="_blank" rel="noopener noreferrer" className="project-link">Learn more</a>
           </div>
 
           <div className="project-card">

@@ -66,13 +66,13 @@ function App() {
           <div className="project-card">
             <h3>Project Two</h3>
             <p>An innovative solution to improve everyday workflows.</p>
-            <a href="#" className="project-link">Learn more</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="project-link">Learn more</a>
           </div>
 
           <div className="project-card">
             <h3>Project Three</h3>
             <p>Exploring new frameworks and technologies through experimentation.</p>
-            <a href="#" className="project-link">Learn more</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="project-link">Learn more</a>
           </div>
         </div>
       </section>

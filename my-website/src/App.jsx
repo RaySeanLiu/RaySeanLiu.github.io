@@ -58,9 +58,9 @@ function App() {
         <h2>Projects</h2>
         <div className="project-grid">
           <div className="project-card">
-            <h3>Project One</h3>
-            <p>A web application built with modern technologies and best practices.</p>
-            <a href="#" className="project-link">Learn more</a>
+            <h3>Game Menu</h3>
+            <p>A Python tkinter video game application.</p>
+            <a href="https://github.com/RaySeanLiu/Game-Menu" className="project-link">Learn more</a>
           </div>
 
           <div className="project-card">
@@ -82,8 +82,8 @@ function App() {
         <p>Message me here.</p>
         <div className="contact-links">
           <a href="mailto:rliu36@ncsu.edu">Email</a>
-          <a href="https://github.com/RaySeanLiu">GitHub</a>
-          <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
+          <a href="https://github.com/RaySeanLiu" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </section>
 
